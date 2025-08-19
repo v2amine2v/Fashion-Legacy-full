@@ -8,15 +8,12 @@ const About = () => {
         <div className="about-content">
         <div className="about-visual">
             <div className="about-image-placeholder">
-              <div className="about-image-overlay">
-                <span>Fashion Forward Since 2020</span>
-              </div>
             </div>
           </div>
           <div className="about-text">
             <h2 className="section-title">Our Story</h2>
             <p className="about-description">
-              Founded in 2020, StyleHub began with a simple mission: to make fashion 
+              Founded in 2020, Fashion & Legacy began with a simple mission: to make fashion 
               accessible without compromising on quality. We believe everyone deserves 
               to feel confident and stylish in their everyday life.
             </p>
@@ -40,7 +37,7 @@ const About = () => {
                 <span className="about-stat-label">Customer Satisfaction</span>
               </div>
             </div>
-            <button className="btn">Learn More About Us</button>
+            <button className="btn ps">Learn More About Us</button>
           </div>
         </div>
       </div>

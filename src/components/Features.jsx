@@ -38,7 +38,7 @@ const Features = () => {
   return (
     <section className="features section" id="features">
       <div className="container">
-        <h2 className="section-title">Why Choose F.&.L?</h2>
+        <h2 className="section-title">Why Choose us?</h2>
         <p className="section-subtitle">
           We're not just selling clothes, we're helping you express your unique style 
           with confidence and comfort.
