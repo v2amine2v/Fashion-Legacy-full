@@ -1,0 +1,157 @@
+*::selection {
+    background:hsl(39, 44%, 43%); /* highlight background */
+    color: hsl(0, 0%, 26%);       /* highlighted text color */
+  }
+.hero {
+  padding: 140px 0 100px;
+  background: radial-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(/src/assets/clothes-shop-thingy.jpg);
+  background-attachment: fixed;
+  color: #f5f5f5;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23ffd700" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23ffd700" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%23ffd700" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="%23ffd700" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="%23ffd700" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.4;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.highlight {
+  color: hsl(39, 44%, 53%);
+  text-shadow: 0 0 50px hsl(39, 54%, 54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:linear-gradient(90deg, hsl(39, 54%, 64%) 0%, hsl(39, 54%, 25%) 100%);
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  margin-bottom: 50px;
+  opacity: 1;
+  color: #fffaef;
+  font-weight: 700;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.btn-large {
+  padding: 18px 36px;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 50px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: hsl(39, 54%, 64%);
+  text-shadow: 0 0 20px hsl(39, 54%, 54%);
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 450px;
+  height: 550px;
+  background: url(/src/assets/psps.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 25px 60px rgba(141, 141, 141, 0.4);
+  
+}
+
+
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 0 80px;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-image-placeholder {
+    width: 350px;
+    height: 450px;
+  }
+}
