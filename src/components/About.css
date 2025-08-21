@@ -105,3 +105,26 @@
 .ps{
   margin: 0 25%;
 }
+@media (max-width: 486px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    text-align: center;
+  }
+
+  .about-stats {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .about-image-placeholder {
+    width: 350px;
+    height: 450px;
+  }
+  .about-stat-number {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+  }
+  
+}
