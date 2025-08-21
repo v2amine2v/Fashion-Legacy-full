@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3 className="footer-title">StyleHub</h3>
+            <h3 className="footer-title">Fashion & Legacy</h3>
             <p className="footer-description">
               Your destination for curated fashion that empowers your unique style.
             </p>
@@ -42,9 +42,9 @@ const Footer = () => {
           <div className="footer-section">
             <h4 className="footer-subtitle">Contact Us</h4>
             <div className="contact-info">
-              <p><i class="ti ti-mail"></i> hello@stylehub.com</p>
-              <p><i class="ti ti-phone"></i> +1 (555) 123-4567</p>
-              <p><i class="ti ti-map-pin"></i> 123 Fashion St, Style City, SC 12345</p>
+              <p><i class="ti ti-mail"></i> fashionPlace@gmail.com</p>
+              <p><i class="ti ti-phone"></i> +213 552 02 93 24</p>
+              <p><i class="ti ti-map-pin"></i> somewhere in algiers :D</p>
             </div>
           </div>
         </div>
