@@ -114,12 +114,14 @@
 
   .about-stats {
     justify-content: center;
-    gap: 25px;
+    gap: 5px;
   }
 
   .about-image-placeholder {
-    width: 350px;
-    height: 450px;
+   
+      width: 80vw;
+      height: 60vh;
+    
   }
   .about-stat-number {
     font-size: 2.6rem;
